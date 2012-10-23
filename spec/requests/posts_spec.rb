@@ -8,7 +8,7 @@ describe "Posts" do
       #response.status.should be(200)	  
 	  visit posts_path
 	  click_link "New Post"
-	  fill_in "post_title", with: "T"
+	  fill_in "post_title", with: "TTT"
 	  click_button "Save Post"	  
 	  error_message = "Too short"
 	  page.should have_content(error_message)
