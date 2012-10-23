@@ -10,7 +10,7 @@ describe "Posts" do
 	  click_link "New Post"
 	  fill_in "post_title", with: "T"
 	  click_button "Save Post"	  
-	  error_message = "stupid test"
+	  error_message = "Too short"
 	  page.should have_content(error_message)
     end
   end
